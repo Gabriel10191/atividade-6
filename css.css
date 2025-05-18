@@ -5,3 +5,25 @@ body{
     min-height: 100vh;
     background-color: #000;
 }
+
+nav{
+    position: relative;
+    width: 475px;
+    height: 50px;
+    background: #222;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    position: relative;
+    display: inline-block;
+    font-size: large;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 23px;
+    z-index: 1;
+}
