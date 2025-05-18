@@ -1,4 +1,4 @@
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,7 +6,7 @@ body{
     background-color: #000;
 }
 
-nav{
+nav {
     position: relative;
     width: 475px;
     height: 50px;
@@ -17,7 +17,7 @@ nav{
     align-items: center;
 }
 
-nav a{
+nav a {
     position: relative;
     display: inline-block;
     font-size: large;
@@ -28,7 +28,7 @@ nav a{
     z-index: 1;
 }
 
-nav span{
+nav span {
     position: absolute;
     top: 0;
     left: 0;
@@ -39,22 +39,22 @@ nav span{
     transition: 0.5s;
 }
 
-nav a:nth-child(1):hover~span{
+nav a:nth-child(1):hover~span {
     left: 0px;
 }
 
-nav a:nth-child(2):hover~span{
+nav a:nth-child(2):hover~span {
     left: 90px;
 }
 
-nav a:nth-child(3):hover~span{
+nav a:nth-child(3):hover~span {
     left: 180px;
 }
 
-nav a:nth-child(4):hover~span{
+nav a:nth-child(4):hover~span {
     left: 275px;
 }
 
-nav a:nth-child(5):hover~span{
+nav a:nth-child(5):hover~span {
     left: 380px;
 }
