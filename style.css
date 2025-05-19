@@ -126,3 +126,64 @@ nav a:nth-child(5):hover~span {
     .linkedin::before {
       background: linear-gradient(to right, #0077B5, #00a0dc);
     }
+
+
+body {
+  background-color: #111;
+  color: #eee;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.bloco {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Bloco com imagem à esquerda e texto à direita */
+.bloco.esquerda {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.bloco.esquerda img {
+  width: 150px;
+  margin-right: 20px;
+}
+
+.bloco.esquerda .texto {
+  max-width: 600px;
+}
+
+/* Bloco com imagem acima e texto abaixo à esquerda */
+.bloco.abaixo img {
+  width: 200px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+/* Texto alinhado à esquerda */
+.bloco.abaixo .texto.esquerda {
+  align-self: flex-start;
+  max-width: 600px;
+}
+
+/* Texto alinhado à direita */
+.bloco.abaixo .texto.direita {
+  align-self: flex-end;
+  max-width: 600px;
+}
+
+h2 {
+  margin-top: 0;
+  color: #fff;
+}
+
+p {
+  color: #ccc;
+  font-size: 16px;
+  line-height: 1.5;
+}
