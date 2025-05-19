@@ -128,8 +128,7 @@ nav a:nth-child(5):hover~span {
       background: linear-gradient(to right, #0077B5, #00a0dc);
     }
 
-
-/* Caixa do WhatsApp com animação e responsividade */
+/* bloco dos contatos */
 .whatsapp-box {
   width: fit-content;
   padding: 15px 25px;
@@ -164,7 +163,6 @@ nav a:nth-child(5):hover~span {
   100% { box-shadow: 0 0 10px #25d36644; }
 }
 
-/* Caixa de e-mail (não editável) com animação e rótulo */
 .email-container {
   position: relative;
   max-width: 320px;
@@ -211,7 +209,7 @@ nav a:nth-child(5):hover~span {
   border-color: #25d366;
 }
 
-/* Responsividade */
+
 @media (max-width: 500px) {
   .whatsapp-box, .email-container {
     width: 90%;
