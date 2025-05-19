@@ -138,43 +138,37 @@ body {
 
 .bloco {
   margin-bottom: 40px;
+}
+
+.bloco.linha {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.bloco.coluna {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Bloco com imagem à esquerda e texto à direita */
-.bloco.esquerda {
-  flex-direction: row;
-  align-items: flex-start;
-}
-
-.bloco.esquerda img {
-  width: 150px;
-  margin-right: 20px;
-}
-
-.bloco.esquerda .texto {
-  max-width: 600px;
-}
-
-/* Bloco com imagem acima e texto abaixo à esquerda */
-.bloco.abaixo img {
+.bloco img {
   width: 200px;
-  margin-bottom: 10px;
   border-radius: 8px;
+  margin: 10px;
 }
 
-/* Texto alinhado à esquerda */
-.bloco.abaixo .texto.esquerda {
+.texto {
+  max-width: 600px;
+  padding: 10px;
+}
+
+.texto.esquerda {
   align-self: flex-start;
-  max-width: 600px;
 }
 
-/* Texto alinhado à direita */
-.bloco.abaixo .texto.direita {
+.texto.direita {
   align-self: flex-end;
-  max-width: 600px;
 }
 
 h2 {
