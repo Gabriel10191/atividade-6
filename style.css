@@ -1,3 +1,4 @@
+/* bloco do c.s.html */
 body {
     display: flex;
     justify-content: center;
@@ -59,7 +60,7 @@ nav a:nth-child(5):hover~span {
     left: 380px;
 }
 
-
+/* bloco das redes */
  body {
       background: #121212;
       font-family: 'Inter', sans-serif;
@@ -128,56 +129,99 @@ nav a:nth-child(5):hover~span {
     }
 
 
-body {
-  background-color: #111;
-  color: #eee;
+/* Caixa do WhatsApp com animação e responsividade */
+.whatsapp-box {
+  width: fit-content;
+  padding: 15px 25px;
+  border-radius: 12px;
+  background: #25d366;
+  transition: background 0.4s ease, box-shadow 0.4s ease, transform 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
+  margin: 40px auto;
+  box-shadow: 0 0 12px #25d36655;
+  animation: pulse 2.5s infinite;
 }
 
-.bloco {
-  margin-bottom: 40px;
+.whatsapp-box:hover {
+  background: linear-gradient(90deg, #25d366, #128c7e);
+  box-shadow: 0 0 18px 5px #25d366aa;
+  transform: scale(1.05);
 }
 
-.bloco.linha {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-
-.bloco.coluna {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.bloco img {
-  width: 200px;
-  border-radius: 8px;
-  margin: 10px;
-}
-
-.texto {
-  max-width: 600px;
-  padding: 10px;
-}
-
-.texto.esquerda {
-  align-self: flex-start;
-}
-
-.texto.direita {
-  align-self: flex-end;
-}
-
-h2 {
-  margin-top: 0;
-  color: #fff;
-}
-
-p {
-  color: #ccc;
+.whatsapp-box a {
+  text-decoration: none;
+  color: white;
   font-size: 16px;
-  line-height: 1.5;
+  display: inline-block;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 10px #25d36644; }
+  50% { box-shadow: 0 0 20px #25d366aa; }
+  100% { box-shadow: 0 0 10px #25d36644; }
+}
+
+/* Caixa de e-mail (não editável) com animação e rótulo */
+.email-container {
+  position: relative;
+  max-width: 320px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  animation: slideIn 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.email-label {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  background-color: #111;
+  color: #ccc;
+  font-size: 12px;
+  padding: 0 6px;
+  z-index: 1;
+}
+
+.email-display {
+  padding: 14px;
+  border: 2px solid #444;
+  border-radius: 10px;
+  background-color: #222;
+  color: #eee;
+  font-size: 14px;
+  text-align: left;
+  transition: border-color 0.3s;
+}
+
+.email-display:hover {
+  border-color: #25d366;
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+  .whatsapp-box, .email-container {
+    width: 90%;
+  }
+
+  .whatsapp-box a {
+    font-size: 14px;
+  }
+
+  .email-display {
+    font-size: 13px;
+  }
 }
